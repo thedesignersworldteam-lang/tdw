@@ -28,7 +28,7 @@ export default async function ServicePage({
   const data = servicesData[slug];
 
   if (!data) {
-    notFound();
+    return notFound();
   }
 
   return (

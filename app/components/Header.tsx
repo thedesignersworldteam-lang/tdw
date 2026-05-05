@@ -240,6 +240,7 @@ const NavItem = ({
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isAtTop, setIsAtTop] = useState(true);
   const [isAnyHovered, setIsAnyHovered] = useState(false);
   const [expandedMobileItem, setExpandedMobileItem] = useState<string | null>(null);
   const pathname = usePathname();
@@ -249,6 +250,8 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+      setIsAtTop(currentScrollY <= 100);
+      
       if (currentScrollY <= 400) {
         // Force text view when at the very top
         setIsScrolled(false);
@@ -305,7 +308,10 @@ export default function Header() {
           `}
           aria-label="Home"
         >
-          <div className="w-[10.5rem] h-auto lg:w-[15.6rem] flex justify-center">
+          <div className={`
+            h-auto flex justify-center transition-all duration-500 ease-in-out
+            ${!isAtTop ? 'w-[7rem] lg:w-[9rem]' : 'w-[10.5rem] lg:w-[15.6rem]'}
+          `}>
             <Image
               width={headerLogo.width}
               height={headerLogo.height}

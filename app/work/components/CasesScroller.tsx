@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useRef } from "react";
-import { motion, useScroll, useTransform, useSpring, MotionValue } from "framer-motion";
+import React, { useRef, useState } from "react";
+import { motion, useScroll, useTransform, useSpring, useMotionValueEvent, MotionValue } from "framer-motion";
 import Link from "next/link";
-import { casesData } from "../data";
+import { casesData } from "@/site-data/work/cases";
 
 export default function CasesScroller() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -17,11 +17,20 @@ export default function CasesScroller() {
 
     const smoothProgress = useSpring(scrollYProgress, { damping: 40, stiffness: 150 });
 
+    // Track which case is currently in the viewport so only its button gets pointer events.
+    // Without this, all layers stack at the same position and the last DOM element
+    // intercepts every click regardless of which case is visually shown.
+    const [activeIndex, setActiveIndex] = useState(0);
+    useMotionValueEvent(smoothProgress, "change", (v) => {
+        const idx = Math.min(total - 1, Math.max(0, Math.floor(v * total)));
+        setActiveIndex(idx);
+    });
+
     return (
         <section ref={containerRef} style={{ height: `${total * 200}vh` }} className="relative w-full bg-black z-20">
             <div className="sticky top-0 w-full h-screen overflow-hidden">
                 {casesData.map((c, i) => (
-                    <CaseLayer key={c.id} data={c} progress={smoothProgress} index={i} total={total} />
+                    <CaseLayer key={c.id} data={c} progress={smoothProgress} index={i} total={total} isActive={i === activeIndex} />
                 ))}
             </div>
         </section>
@@ -32,12 +41,14 @@ const CaseLayer = ({
     data, 
     progress, 
     index, 
-    total 
+    total,
+    isActive,
 }: { 
     data: typeof casesData[0], 
     progress: MotionValue<number>, 
     index: number, 
-    total: number 
+    total: number,
+    isActive: boolean,
 }) => {
     const length = 1 / total;
     const start = index * length;
@@ -135,9 +146,11 @@ const CaseLayer = ({
                 </div>
 
                 {/* Independent Pinned Description & Button at Bottom Left */}
+                {/* pointer-events only active on the currently visible layer to prevent */}
+                {/* hidden layers (which share the same DOM position) from stealing clicks */}
                 <motion.div 
                     style={{ opacity: descOpacity }}
-                    className="absolute left-6 sm:left-10 md:left-16 lg:left-24 bottom-12 md:bottom-20 flex flex-col items-start pointer-events-auto max-w-sm md:max-w-md"
+                    className={`absolute left-6 sm:left-10 md:left-16 lg:left-24 bottom-12 md:bottom-20 flex flex-col items-start max-w-sm md:max-w-md ${isActive ? "pointer-events-auto" : "pointer-events-none"}`}
                 >
                     <p className="text-gray-300 text-lg md:text-[1.35rem] font-medium mb-8 leading-relaxed">
                         {data.description}

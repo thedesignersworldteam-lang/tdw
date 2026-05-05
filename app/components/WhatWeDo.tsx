@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { useScroll, useTransform, motion, type MotionValue } from "framer-motion";
+import Link from "next/link";
 import {
     whatWeDoHeading,
     whatWeDoBackground,
@@ -25,6 +26,7 @@ const Card = ({
     backgroundTailwind,
     image,
     imageAlt,
+    href,
     progress,
     range,
     targetScale,
@@ -78,14 +80,17 @@ const Card = ({
                 </div>
 
                 {/* Know more button — bottom left */}
-                <button className={`${serviceCardStyles.button.position} z-20 flex items-center gap-4 ${serviceCardStyles.button.background} ${serviceCardStyles.button.textColor} ${serviceCardStyles.button.paddingLeft} ${serviceCardStyles.button.paddingRight} ${serviceCardStyles.button.paddingY} ${serviceCardStyles.button.borderRadius} ${serviceCardStyles.button.fontWeight} ${serviceCardStyles.button.hoverBackground} transition-colors w-max group pointer-events-auto`}>
+                <Link
+                    href={href}
+                    className={`${serviceCardStyles.button.position} z-20 flex items-center gap-4 ${serviceCardStyles.button.background} ${serviceCardStyles.button.textColor} ${serviceCardStyles.button.paddingLeft} ${serviceCardStyles.button.paddingRight} ${serviceCardStyles.button.paddingY} ${serviceCardStyles.button.borderRadius} ${serviceCardStyles.button.fontWeight} ${serviceCardStyles.button.hoverBackground} transition-colors w-max group pointer-events-auto`}
+                >
                     <span className={serviceCardStyles.button.fontSize}>{serviceCardStyles.button.label}</span>
                     <div className={`${serviceCardStyles.button.arrowSize} rounded-full ${serviceCardStyles.button.arrowBg} ${serviceCardStyles.button.arrowColor} flex items-center justify-center transition-transform group-hover:rotate-45`}>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                     </div>
-                </button>
+                </Link>
             </motion.div>
         </div>
     );
