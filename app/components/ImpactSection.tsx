@@ -46,20 +46,23 @@ export default function ImpactSection() {
                      * on the same element, which previously forced the browser to
                      * re-clip (paint) on every frame instead of compositing.
                      */}
-                    <div className={`relative mt-32 md:mt-52 ${outerCircle.width} ${outerCircle.maxWidth} aspect-square flex items-center justify-center rounded-full overflow-hidden shrink-0 -translate-y-[7.5%]`}>
-                        {/* Outer rotating circle — transform-only, no clip on this element */}
-                        <motion.div
-                            style={{ rotate, willChange: "transform" }}
-                            className="absolute inset-0 w-full h-full origin-center"
-                        >
-                            <img
-                                src={outerCircle.backgroundImage.src}
-                                alt={outerCircle.backgroundImage.alt}
-                                className={`w-full h-full object-cover ${outerCircle.backgroundImage.opacity}`}
-                                style={{ willChange: "transform" }}
-                                draggable={false}
-                            />
-                        </motion.div>
+                    <div className={`relative mt-32 md:mt-52 ${outerCircle.width} ${outerCircle.maxWidth} aspect-square flex items-center justify-center shrink-0 -translate-y-[7.5%]`}>
+                        {/* Static wrapper for clipping the image to avoid repaint */}
+                        <div className="absolute inset-0 rounded-full overflow-hidden">
+                            {/* Outer rotating circle — transform-only, no clip on this element */}
+                            <motion.div
+                                style={{ rotate, willChange: "transform" }}
+                                className="absolute inset-0 w-full h-full origin-center"
+                            >
+                                <img
+                                    src={outerCircle.backgroundImage.src}
+                                    alt={outerCircle.backgroundImage.alt}
+                                    className={`w-full h-full object-cover ${outerCircle.backgroundImage.opacity}`}
+                                    style={{ willChange: "transform" }}
+                                    draggable={false}
+                                />
+                            </motion.div>
+                        </div>
 
                         {/* Inner expanding circle */}
                         <motion.div

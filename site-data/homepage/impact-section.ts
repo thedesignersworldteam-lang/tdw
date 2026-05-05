@@ -49,7 +49,7 @@ export const impactSectionData = {
     /** Starting size as percentage of outer circle */
     startSizePercent: 35,
     /** Max scale multiplier (covers the full outer circle) */
-    maxScale: 3.2,
+    maxScale: 4.5,
     backgroundColor: "#fdf8f2",
     tailwind: "bg-[#fdf8f2]",
   },
