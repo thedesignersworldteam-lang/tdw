@@ -24,7 +24,7 @@ export const aboutHeroParagraphs: string[] = [
 
 export const aboutHeroBodyStyles = {
   fontSize: "text-lg md:text-xl",
-  fontWeight: "font-light",
+  fontWeight: "font-bold",
   color: "#171717",
   opacity: "opacity-80",
   colorTailwind: "text-[#171717]/80",
@@ -52,7 +52,7 @@ export const aboutHeroParallax = {
 
 // ── Section Layout ────────────────────────────────────────────
 export const aboutHeroLayout = {
-  textSectionHeight: "h-[95vh]",
+  textSectionHeight: "h-[80vh]",
   imageWidth: "w-[90vw]",
   imageHeight: "h-[100vh]",
   imageRadius: "rounded-3xl",

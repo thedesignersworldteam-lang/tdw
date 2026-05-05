@@ -42,7 +42,7 @@ export const socialMediaImages: StackImage[] = [
     placeholderColor: "#8c6bf7",
     placeholderColorTailwind: "bg-[#8c6bf7]",
     zIndex: 2,
-    rotate: -3,
+    rotate: -6,
   },
   {
     id: 3,
@@ -52,7 +52,7 @@ export const socialMediaImages: StackImage[] = [
     placeholderColor: "#00c0b5",
     placeholderColorTailwind: "bg-[#00c0b5]",
     zIndex: 3,
-    rotate: 4,
+    rotate: 8,
   },
 ];
 
@@ -67,7 +67,7 @@ export const socialMediaCopy = {
     lineHeight: "leading-[1]",
     color: "#1a1a1a",
     colorTailwind: "text-[#1a1a1a]",
-    textTransform: "lowercase",
+    textTransform: "none",
     marginBottom: "mb-8",
   },
 
@@ -94,14 +94,14 @@ export const socialMediaLayout = {
   maxWidth: "max-w-[1440px]",
 
   imageSide: {
-    width: "w-full md:w-5/12 lg:w-1/2",
-    imageMaxWidth: "max-w-[300px] lg:max-w-[320px]",
-    imageHeight: "h-[60vh] md:h-[80vh]",
+    width: "w-full sm:w-full md:w-1/2 lg:w-5/12 xl:w-1/3",
+    imageMaxWidth: "max-w-[340px] sm:max-w-[380px] md:max-w-[400px] lg:max-w-[440px] xl:max-w-[480px]",
+    imageHeight: "h-[70vh] sm:h-[75vh] md:h-[85vh] lg:h-[90vh] xl:h-[95vh]",
     borderRadius: "rounded-[20px]",
   },
 
   contentSide: {
-    width: "w-full md:w-7/12 lg:w-1/2",
+    width: "w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2",
   },
 } as const;
 

@@ -39,26 +39,26 @@ function CardItem({
                 };
             case "entering":
                 return {
-                    opacity:      [0, 1,      1,      1,      1     ],
-                    y:            ["40vh", "0%",   "0%",   "0%",   "0%"  ],
-                    scale:        [1,      1,      0.6,    1.06,   1     ],
-                    width:        ["48px", "48px", "48px", "100%", "100%"],
-                    height:       ["48px", "48px", "48px", "100%", "100%"],
-                    borderRadius: ["50%",  "50%",  "50%",  "20px", "20px"],
-                    rotate:       [0,      0,      0,      rotate * 1.5, rotate],
-                    transition:   { duration: 1.0, times: [0, 0.3, 0.5, 0.8, 1], ease: "easeInOut" as const },
+                    opacity:      [0, 1],
+                    y:            ["40vh", "0%"],
+                    scale:        [1, 1],
+                    width:        ["48px", "100%"],
+                    height:       ["48px", "100%"],
+                    borderRadius: ["50%", "20px"],
+                    rotate:       [0, rotate],
+                    transition:   { duration: 1.2, ease: [0.16, 1, 0.3, 1] },
                 };
             case "active":
                 return { opacity: 1, y: "0%", scale: 1, width: "100%", height: "100%", borderRadius: "20px", rotate, transition: { duration: 0.5, ease: "easeOut" as const } };
             case "exiting":
-                return { opacity: 1, y: "130%", x: 0, scale: 1, width: "100%", height: "100%", borderRadius: "20px", rotate, transition: { duration: 0.38, ease: [0.4, 0, 0.6, 1] as [number, number, number, number] } };
+                return { opacity: 1, y: "130%", x: 0, scale: 1, width: "100%", height: "100%", borderRadius: "20px", rotate, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } };
         }
     })();
 
     const imageAnimate = (() => {
         switch (state) {
             case "hidden":   return { opacity: 0, scale: 1.1, transition: { duration: 0 } };
-            case "entering": return { opacity: [0, 0, 1, 1] as number[], scale: [1.1, 1.1, 1, 1] as number[], transition: { duration: 1.0, times: [0, 0.5, 0.8, 1], ease: "easeOut" as const } };
+            case "entering": return { opacity: 1, scale: 1, transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1] } };
             case "active":   return { opacity: 1, scale: 1, transition: { duration: 0.5 } };
             case "exiting":  return { opacity: 1, scale: 1, transition: { duration: 0.5 } };
         }
@@ -66,9 +66,9 @@ function CardItem({
 
     return (
         <motion.div
-            className="absolute inset-0 m-auto overflow-hidden shadow-2xl"
+            className="absolute inset-0 m-auto overflow-hidden"
             initial={{ opacity: 0, y: "40vh", width: "48px", height: "48px", borderRadius: "50%", scale: 1 }}
-            animate={cardAnimate}
+            animate={cardAnimate as any}
             onAnimationComplete={() => { if (state === "entering") onEnteringComplete(); }}
             style={{ backgroundColor: item.placeholderColor }}
         >
@@ -89,7 +89,7 @@ function CardItem({
                     alt={item.alt}
                     className="absolute inset-0 w-full h-full object-cover"
                     initial={{ opacity: 0, scale: 1.1 }}
-                    animate={imageAnimate}
+                    animate={imageAnimate as any}
                 />
             )}
         </motion.div>
@@ -171,7 +171,7 @@ export default function SocialMediaSpecialists() {
 
                     {/* Left: Card stack */}
                     <div className={`${socialMediaLayout.imageSide.width} flex justify-center md:justify-start pl-0 md:pl-4 mb-6 md:mb-0 relative py-12 md:py-0`}>
-                        <div className={`relative w-full md:w-[85%] ${socialMediaLayout.imageSide.imageMaxWidth} ${socialMediaLayout.imageSide.imageHeight} flex items-center justify-center -translate-y-[4vh] md:translate-y-0`}>
+                        <div className={`relative w-full md:w-[85%] ${socialMediaLayout.imageSide.imageMaxWidth} ${socialMediaLayout.imageSide.imageHeight} flex items-center justify-center -translate-y-[4vh] md:-translate-y-[12vh]`}>
                             {socialMediaImages.map((item, index) => (
                                 <div key={item.id} className="absolute inset-0" style={{ zIndex: index + 1 }}>
                                     <CardItem
@@ -185,7 +185,7 @@ export default function SocialMediaSpecialists() {
                     </div>
 
                     {/* Right: Copy */}
-                    <div className={`${socialMediaLayout.contentSide.width} flex flex-col justify-center py-4 md:py-8 text-center md:text-left items-center md:items-start relative z-10 lg:pl-10`}>
+                    <div className={`${socialMediaLayout.contentSide.width} md:ml-auto flex flex-col justify-center py-4 md:py-8 text-center md:text-left items-center md:items-start relative z-10 lg:pl-10`}>
                         <motion.div style={{ x: rightPanelX, opacity: rightPanelOpacity }} className="max-w-[650px]">
                             <h2
                                 className={`${heading.fontSize} ${heading.fontWeight} ${heading.letterSpacing} ${heading.lineHeight} ${heading.colorTailwind} ${heading.marginBottom} ${heading.textTransform}`}
