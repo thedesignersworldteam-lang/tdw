@@ -20,6 +20,11 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "cdn.jsdelivr.net",
       },
+      // Pexels videos used in work case backgrounds
+      {
+        protocol: "https",
+        hostname: "videos.pexels.com",
+      },
     ],
   },
 };

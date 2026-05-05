@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { casesData } from "@/app/work/data";
+import { casesData } from "@/site-data/work/cases";
 import { fontSizes } from "@/site-data/tokens";
 
 export default function OurWork() {

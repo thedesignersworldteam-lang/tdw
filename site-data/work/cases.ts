@@ -96,9 +96,9 @@ export const casesData: CaseStudy[] = [
     homepageMediaHoverUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"
   },
   {
-    id: "tate",
+    id: "Addis",
     serial: "03 /",
-    title: "Tate Modern",
+    title: "Addis",
     description: "Connecting legacy art institutions with modern sensory technologies.",
     fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     video: "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4",
@@ -115,7 +115,31 @@ export const casesData: CaseStudy[] = [
     showcaseImageLeft: "/work/addis/addis-1.png",
     showcaseImageRight: "/work/addis/addis-2.png",
     homepageMediaRestType: "image",
-    homepageMediaRestUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
+    homepageMediaRestUrl: "/work/addis/addis_1920X1080.jpg",
+    homepageMediaHoverType: "video",
+    homepageMediaHoverUrl: "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4"
+  },
+  {
+    id: "Addiss",
+    serial: "03 /",
+    title: "Addis",
+    description: "Connecting legacy art institutions with modern sensory technologies.",
+    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    video: "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4",
+    image: "/work/addis/addis_1920X1080.jpg",
+    imageAlt: "Tate Modern project still",
+    backgroundType: "image",
+    strategicObjectives: [
+      "Modernize the museum's digital archive, making it fully searchable and accessible.",
+      "Implement a sleek, modern UI that elevates the user's focus on the artwork itself.",
+      "Optimize the backend for fast delivery of high-resolution image assets globally."
+    ],
+    galleryImage1: "/work/addis/addis_1920X720.jpg",
+    galleryImage2: "",
+    showcaseImageLeft: "/work/addis/addis-1.png",
+    showcaseImageRight: "/work/addis/addis-2.png",
+    homepageMediaRestType: "image",
+    homepageMediaRestUrl: "/work/addis/addis_1920X1080.jpg",
     homepageMediaHoverType: "video",
     homepageMediaHoverUrl: "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4"
   },

@@ -1,7 +1,11 @@
 import React from "react";
 import { notFound } from "next/navigation";
-import { casesData } from "../data";
+import { casesData } from "@/site-data/work/cases";
 import PageTransition from "./components/PageTransition";
+
+export async function generateStaticParams() {
+    return casesData.map((c) => ({ slug: c.id }));
+}
 
 export async function generateMetadata(props: any) {
     const params = await props.params;
@@ -17,7 +21,7 @@ export default async function CaseSubPage(props: any) {
     const params = await props.params;
     const caseData = casesData.find((c) => c.id === params.slug);
     if (!caseData) {
-        notFound();
+        return notFound();
     }
 
     return (
