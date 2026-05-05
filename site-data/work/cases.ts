@@ -50,7 +50,7 @@ export const casesData: CaseStudy[] = [
   {
     id: "art-basel",
     serial: "01 /",
-    title: "Art Basel",
+    title: "test",
     description: "Harnessing AI to transform how the art world engages.",
     fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     video: "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4",
@@ -102,7 +102,7 @@ export const casesData: CaseStudy[] = [
     description: "Connecting legacy art institutions with modern sensory technologies.",
     fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     video: "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4",
-    image: "/work/addis/addis_1920X1080.jpg",
+    image: "/work/addis/header.png",
     imageAlt: "Tate Modern project still",
     backgroundType: "image",
     strategicObjectives: [

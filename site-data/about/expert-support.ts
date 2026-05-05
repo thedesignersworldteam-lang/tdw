@@ -21,34 +21,34 @@ export interface ExpertCard {
 export const expertCards: ExpertCard[] = [
   // Row 1
   {
-    src: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=800&auto=format&fit=crop",
+    src: "/about/a.jpg",
     alt: "Design workspace",
     style: { top: "80vh", left: "2%" },
   },
   {
-    src: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
+    src: "/about/b.jpg",
     alt: "Tech stack",
     style: { top: "95vh", left: "57%" },
   },
   // Row 2
   {
-    src: "https://images.unsplash.com/photo-1555680202-c86f0e12f086?q=80&w=800&auto=format&fit=crop",
+    src: "/about/c.jpg",
     alt: "Product design",
     style: { top: "170vh", left: "22%" },
   },
   {
-    src: "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop",
+    src: "/about/d.jpg",
     alt: "Team at work",
     style: { top: "165vh", right: "2%" },
   },
   // Row 3
   {
-    src: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop",
+    src: "/about/e.jpg",
     alt: "Creative process",
     style: { top: "250vh", left: "2%" },
   },
   {
-    src: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop",
+    src: "/about/f.jpg",
     alt: "Client collaboration",
     style: { top: "260vh", left: "57%" },
   },

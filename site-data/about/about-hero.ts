@@ -35,7 +35,7 @@ export const aboutHeroBodyStyles = {
 
 // ── Parallax Image ────────────────────────────────────────────
 export const aboutHeroImage = {
-  src: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2670&auto=format&fit=crop",
+  src: "/about/header.png",
   alt: "The Designers World studio team",
   priority: true,
 };

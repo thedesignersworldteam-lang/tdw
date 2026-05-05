@@ -18,27 +18,27 @@ export interface TeamMember {
 // Even-indexed cards (0, 2) render flush; odd-indexed (1, 3) are offset downward.
 export const teamMembers: TeamMember[] = [
   {
-    name: "Alex Rivera",
-    title: "Lead Designer",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+    name: "Indrajeet Sen",
+    title: "CEO",
+    image: "/about/indrajeet.jpeg",
     themeColor: "#4a88f5",
   },
   {
-    name: "Samira Jones",
-    title: "Creative Director",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80",
+    name: "Varsha Sinha",
+    title: "COO",
+    image: "/about/sonika.jpeg",
     themeColor: "#ed6e33",
   },
   {
-    name: "Michael Chen",
-    title: "Senior Developer",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+    name: "Sonika Biltoria ",
+    title: "Creative Head",
+    image: "/about/varsha.jpeg",
     themeColor: "#6bb88b",
   },
   {
-    name: "Laila Woods",
-    title: "Product Manager",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+    name: "Priyanshu Bir",
+    title: "Technical Head",
+    image: "/about/priyanshu.jpeg",
     themeColor: "#a364ff",
   },
 ];

@@ -36,7 +36,7 @@ export const impactSectionData = {
     maxWidth: "max-w-[1050px]",
     /** Unsplash background image shown inside the rotating circle */
     backgroundImage: {
-      src: "home/impact_1.png",
+      src: "",
       alt: "Design Collage",
       opacity: "opacity-80",
     },
