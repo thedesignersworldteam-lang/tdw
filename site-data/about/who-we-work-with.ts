@@ -14,6 +14,8 @@ export interface ClientTypeCard {
   color: string;
   /** Icon identifier — resolved to a JSX element in the component */
   iconKey: "startup" | "small-business" | "premium-brand";
+  /** Lottie JSON animation source */
+  lottieSrc?: string;
   /** Tailwind margin-top offset for staggered column layout */
   offset: string;
 }
@@ -27,6 +29,7 @@ export const clientTypeCards: ClientTypeCard[] = [
     bg: "bg-[#ed6e33]",
     color: "#ed6e33",
     iconKey: "startup",
+    lottieSrc: "/home/card1.json",
     offset: "mt-0",
   },
   {
@@ -35,6 +38,7 @@ export const clientTypeCards: ClientTypeCard[] = [
     bg: "bg-[#4a88f5]",
     color: "#4a88f5",
     iconKey: "small-business",
+    lottieSrc: "/home/card1.json",
     offset: "mt-10 md:mt-16",
   },
   {
@@ -43,6 +47,7 @@ export const clientTypeCards: ClientTypeCard[] = [
     bg: "bg-[#6bb88b]",
     color: "#6bb88b",
     iconKey: "premium-brand",
+    lottieSrc: "/home/card1.json",
     offset: "mt-0",
   },
 ];
@@ -82,6 +87,11 @@ export const clientTypeCardStyles = {
   icon: {
     size: "w-16 h-16",
     opacity: "opacity-80",
+    margin: "mt-auto",
+  },
+  lottie: {
+    size: "w-32 h-32",
+    opacity: "opacity-90",
     margin: "mt-auto",
   },
 };

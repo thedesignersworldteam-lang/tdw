@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Player } from "@lottiefiles/react-lottie-player";
 import {
     clientTypeCards,
     whoWeWorkWithHeading,
@@ -96,7 +97,18 @@ export default function WhoWeWorkWith() {
                                 {card.desc}
                             </p>
                             <div className="mt-auto pt-8 flex justify-center">
-                                <CardIcon iconKey={card.iconKey} />
+                                {card.lottieSrc ? (
+                                    <div className={`${clientTypeCardStyles.lottie.size} ${clientTypeCardStyles.lottie.margin} ${clientTypeCardStyles.lottie.opacity}`}>
+                                        <Player
+                                            autoplay
+                                            loop
+                                            src={card.lottieSrc}
+                                            style={{ width: '100%', height: '100%' }}
+                                        />
+                                    </div>
+                                ) : (
+                                    <CardIcon iconKey={card.iconKey} />
+                                )}
                             </div>
                         </motion.div>
                     ))}
