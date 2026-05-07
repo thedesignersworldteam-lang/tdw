@@ -21,34 +21,34 @@ export interface ExpertCard {
 export const expertCards: ExpertCard[] = [
   // Row 1
   {
-    src: "/about/a.jpg",
+    src: "/about/aa.png",
     alt: "Design workspace",
     style: { top: "80vh", left: "2%" },
   },
   {
-    src: "/about/b.jpg",
+    src: "/about/ff.png",
     alt: "Tech stack",
     style: { top: "95vh", left: "57%" },
   },
   // Row 2
   {
-    src: "/about/c.jpg",
+    src: "/about/cc_office.png",
     alt: "Product design",
     style: { top: "170vh", left: "22%" },
   },
   {
-    src: "/about/d.jpg",
+    src: "/about/dd.png",
     alt: "Team at work",
     style: { top: "165vh", right: "2%" },
   },
   // Row 3
   {
-    src: "/about/e.jpg",
+    src: "/about/ee.png",
     alt: "Creative process",
     style: { top: "250vh", left: "2%" },
   },
   {
-    src: "/about/f.jpg",
+    src: "/about/bb.png",
     alt: "Client collaboration",
     style: { top: "260vh", left: "57%" },
   },

@@ -20,25 +20,25 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Indrajeet Sen",
     title: "CEO",
-    image: "/about/indrajeet.jpeg",
+    image: "/about/inder.png",
     themeColor: "#4a88f5",
   },
   {
     name: "Varsha Sinha",
     title: "COO",
-    image: "/about/sonika.jpeg",
+    image: "/about/varsha.png",
     themeColor: "#ed6e33",
   },
   {
     name: "Sonika Biltoria ",
     title: "Creative Head",
-    image: "/about/varsha.jpeg",
+    image: "/about/sonika.png",
     themeColor: "#6bb88b",
   },
   {
     name: "Priyanshu Bir",
     title: "Technical Head",
-    image: "/about/priyanshu.jpeg",
+    image: "/about/priyanshu.png",
     themeColor: "#a364ff",
   },
 ];

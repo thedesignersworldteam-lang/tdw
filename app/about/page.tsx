@@ -3,7 +3,6 @@ import TeamSection from "./components/TeamSection";
 import AboutMarquee from "./components/AboutMarquee";
 import AboutHero from "./components/AboutHero";
 import ExpertSupport from "./components/ExpertSupport";
-import WhoWeWorkWith from "./components/WhoWeWorkWith";
 
 export const metadata = {
     title: "About Us | The Designers World",
@@ -18,8 +17,6 @@ export default function AboutPage() {
             {/* The Requested Section */}
             <DifferentSection />
 
-            {/* Who We Work With — client type cards */}
-            <WhoWeWorkWith />
 
             {/* Staggered Grid Member Card Section */}
             <TeamSection />

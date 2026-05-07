@@ -42,7 +42,7 @@ export const services: ServiceCard[] = [
     title:              "Digital Marketing",
     description:        "Marketing strategies that drive traffic, leads, and real revenue. — We create and execute data driven digital marketing campaigns across SEO, Google Ads, social media management, email automation, and marketplace growth on Amazon, Flipkart, BigBasket, and Meesho. Whether it's building your brand on Instagram, running high performing Meta ad campaigns, or scaling your product sales on leading e commerce platforms, every strategy we craft puts your brand in front of the right audience at the right time, delivering measurable ROI and sustainable business growth.",
     backgroundTailwind: "bg-[#F7C518]",
-    backgroundColor:    "#F7C518",
+    backgroundColor:    "#ffc800ff",
     href:               "/services/digital-marketing",
     image:              "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80",
     imageAlt:           "Digital marketing strategy illustration",

@@ -35,7 +35,7 @@ export const aboutHeroBodyStyles = {
 
 // ── Parallax Image ────────────────────────────────────────────
 export const aboutHeroImage = {
-  src: "/about/header.png",
+  src: "/about/office4.png",
   alt: "The Designers World studio team",
   priority: true,
 };

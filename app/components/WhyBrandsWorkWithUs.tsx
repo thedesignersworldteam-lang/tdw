@@ -7,6 +7,7 @@ import {
     whyBrandsCardStyles,
     whyBrandsHeading,
     whyBrandsLayout,
+    type WhyBrandsCard,
 } from "@/site-data/homepage/why-brands-work-with-us";
 
 export default function WhyBrandsWorkWithUs() {
@@ -73,7 +74,33 @@ export default function WhyBrandsWorkWithUs() {
                                     </div>
                                 </div>
                             );
-                        } else {
+                        } else if (item.type === "video") {
+                            return (
+                                <div
+                                    key={index}
+                                    className={`${combined} overflow-hidden bg-black`}
+                                    onMouseEnter={() => setHoveredIndex(index)}
+                                    onMouseLeave={() => setHoveredIndex(null)}
+                                >
+                                    {item.src ? (
+                                        <video
+                                            src={item.src}
+                                            poster={item.poster || undefined}
+                                            autoPlay
+                                            muted
+                                            loop
+                                            playsInline
+                                            className="w-full h-full object-cover"
+                                            aria-label={item.alt}
+                                        />
+                                    ) : (
+                                        <div className="w-full h-full flex items-center justify-center bg-neutral-900">
+                                            <span className="text-white/40 text-sm">Video coming soon</span>
+                                        </div>
+                                    )}
+                                </div>
+                            );
+                        } else if (item.type === "image") {
                             return (
                                 <div
                                     key={index}
@@ -90,6 +117,25 @@ export default function WhyBrandsWorkWithUs() {
                                     />
                                 </div>
                             );
+                        } else if (item.type === "text") {
+                            return (
+                                <div
+                                    key={index}
+                                    className={`${combined} flex flex-col justify-center gap-4 ${whyBrandsCardStyles.stat.padding} ${item.backgroundTailwind} ${item.textColorTailwind}`}
+                                    onMouseEnter={() => setHoveredIndex(index)}
+                                    onMouseLeave={() => setHoveredIndex(null)}
+                                >
+                                    <h3 className={`${whyBrandsCardStyles.stat.labelFontSize} ${whyBrandsCardStyles.stat.labelFontWeight} leading-tight`}>
+                                        {item.heading}
+                                    </h3>
+                                    <div className="w-full h-px bg-white/20" />
+                                    <p className={`${whyBrandsCardStyles.stat.subLabelFontSize} opacity-75 leading-relaxed`}>
+                                        {item.body}
+                                    </p>
+                                </div>
+                            );
+                        } else {
+                            return null;
                         }
                     })}
                 </div>
