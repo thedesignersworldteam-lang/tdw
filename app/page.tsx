@@ -6,7 +6,7 @@ import OurWork from "./components/OurWork";
 import WhyBrandsWorkWithUs from "./components/WhyBrandsWorkWithUs";
 import HowWeWork from "./components/HowWeWork";
 import LogosStaggeredGrid from "@/components/LogosStaggeredGrid";
-import WhoWeWorkWith from "./about/components/WhoWeWorkWith";
+import WhoWeWorkWith from "./components/WhoWeWorkWith";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
       <div className="-mt-16 md:-mt-24 w-full">
         <WhatWeDo />
       </div>
-      <div className="mt-8 md:mt-16 w-full">
+      <div className="w-full">
         <WhoWeWorkWith />
       </div>
       <div className="-mt-16 md:-mt-24 w-full">

@@ -8,6 +8,7 @@ export * from "./hero";
 export * from "./impact-section";
 export * from "./social-media-specialists";
 export * from "./what-we-do";
+export * from "./who-we-work-with";
 export * from "./why-brands-work-with-us";
 export * from "./how-we-work";
 export * from "./our-clients";
