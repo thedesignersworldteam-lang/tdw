@@ -66,8 +66,8 @@ export const casesData: CaseStudy[] = [
     galleryImage2: "/work/icmr/icmr3.jpg",
     showcaseImageLeft: "/work/icmr/icmr4.jpg",
     showcaseImageRight: "/work/icmr/icmr3.jpg",
-    homepageMediaRestType: "video",
-    homepageMediaRestUrl: "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4",
+    homepageMediaRestType: "image",
+    homepageMediaRestUrl: "/work/icmr/icmr2.png",
     homepageMediaHoverType: "image",
     homepageMediaHoverUrl: "/work/icmr/icmr2.png",
   },
@@ -90,10 +90,10 @@ export const casesData: CaseStudy[] = [
     galleryImage2: "https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?q=80&w=2564&auto=format&fit=crop",
     showcaseImageLeft: "/work/jeap/jeap3.jpg",
     showcaseImageRight: "/work/jeap/jeap4.jpg",
-    homepageMediaRestType: "video",
-    homepageMediaRestUrl: "https://videos.pexels.com/video-files/2882118/2882118-uhd_2560_1440_24fps.mp4",
+    homepageMediaRestType: "image",
+    homepageMediaRestUrl: "/work/jeap/header.jpg",
     homepageMediaHoverType: "image",
-    homepageMediaHoverUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"
+    homepageMediaHoverUrl: "/work/jeap/jeap2.jpg"
   },
   {
     id: "Addis",
@@ -116,8 +116,8 @@ export const casesData: CaseStudy[] = [
     showcaseImageRight: "/work/addis/addis-2.png",
     homepageMediaRestType: "image",
     homepageMediaRestUrl: "/work/addis/header.png",
-    homepageMediaHoverType: "video",
-    homepageMediaHoverUrl: "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4"
+    homepageMediaHoverType: "image",
+    homepageMediaHoverUrl: "/work/addis/header.png"
   },
   {
     id: "who",

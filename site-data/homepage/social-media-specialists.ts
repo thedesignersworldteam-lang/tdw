@@ -47,7 +47,7 @@ export const socialMediaImages: StackImage[] = [
   {
     id: 3,
     mediaType: "image",
-    src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80",
+    src: "/home/team.jpeg",
     alt: "Campaign analytics and results",
     placeholderColor: "#00c0b5",
     placeholderColorTailwind: "bg-[#00c0b5]",

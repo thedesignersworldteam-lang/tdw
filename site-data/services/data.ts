@@ -66,7 +66,7 @@ export const servicesData: Record<string, ServiceData> = {
     heroBgColor: "#fdf8f2",
     heroHeadline: "We Build Websites That Power Brands & Drive Real Growth.",
     overviewHeadline: "A Web Studio Built for Brands That Mean Business.",
-    overviewImage: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80",
+    overviewImage: "/services/web/web_studio_brand_intro.png",
     overviewText: "We are a creative web design and development studio building high performance websites for brands ready to grow. Every site we deliver combines user focused UI/UX design, clean front end and back end development, and SEO ready architecture, so your website doesn't just look premium, it ranks, converts, and scales with your brand.",
     cards: [
       { id: "1", backgroundColor: "#65C495", title: "Landing Page", listItems: ["Product launches and campaigns", "Event promotions and registrations", "Single service businesses", "High converting lead generation pages"] },
@@ -84,7 +84,7 @@ export const servicesData: Record<string, ServiceData> = {
           "We craft high fidelity UI designs that balance visual appeal, brand consistency, and accessibility (WCAG) standards, while guiding users naturally toward action.",
           "The result is an intuitive, refined website interface with clear hierarchy that reduces bounce rates and increases time on site."
         ],
-        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80"
+        image: "/services/web/ui_ux_strategy.jpg"
       },
       {
         id: "responsive-web-design",
@@ -94,7 +94,7 @@ export const servicesData: Record<string, ServiceData> = {
           "A mobile first design approach with fast load times, touch friendly navigation, and optimised media for the 60% of users browsing on mobile.",
           "Built to meet Google's Core Web Vitals benchmarks, directly improving your search rankings, organic visibility, and user experience."
         ],
-        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+        image: "/services/web/responsive_website.png"
       },
       {
         id: "custom-web-development",
@@ -104,7 +104,7 @@ export const servicesData: Record<string, ServiceData> = {
           "Secure development practices including SSL encryption, input validation, and rigorous QA testing across every device and browser before launch.",
           "Tailored functionality like booking systems, calculators, dashboards, and integrations, fully built for your needs without templates or page builders."
         ],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+        image: "/services/web/custom_website.png"
       },
       {
         id: "ecommerce-web-development",
@@ -114,7 +114,7 @@ export const servicesData: Record<string, ServiceData> = {
           "Complete store setup with inventory management, order tracking, customer accounts, and automated emails for a seamless buying experience.",
           "Product pages optimised with structured data (Schema), fast loading images, and SEO friendly URLs to boost visibility on Google Shopping and organic search."
         ],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+        image: "/services/web/ecommerce.png"
       },
       {
         id: "website-speed-and-performance-optimisation",
@@ -124,7 +124,7 @@ export const servicesData: Record<string, ServiceData> = {
           "Built to meet or exceed Google's Core Web Vitals thresholds, directly boosting search rankings and overall user satisfaction.",
           "Optimised front end and server side performance ensures your website loads in under 3 seconds, even on slower mobile networks."
         ],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+        image: "/services/web/speed_test.png"
       },
       {
         id: "On Page & Technical SEO Setup",
@@ -134,7 +134,7 @@ export const servicesData: Record<string, ServiceData> = {
           "Fully crawlable and indexable architecture with broken link checks, redirect fixes, and Google Search Console plus Analytics integration from day one.",
           "Local SEO optimisation with Google Business Profile setup, local schema markup, and location based keyword targeting for region focused businesses."
         ],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+        image: "/services/web/technical_setup.png"
       },
       {
         id: "cms-development-and-website-management",
@@ -144,7 +144,7 @@ export const servicesData: Record<string, ServiceData> = {
           "Configurable user roles, permission levels, and content scheduling so your team can publish, edit, and collaborate without ever touching code.",
           "Built with security best practices including regular updates, plugin audits, firewall protection, and automated backups to keep your site safe."
         ],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+        image: "/services/web/cms_website.jpg"
       },
       {
         id: "website-maintenance-and-ongoing-support",
@@ -154,58 +154,58 @@ export const servicesData: Record<string, ServiceData> = {
           "Monthly maintenance plans with dedicated support, ensuring every issue is identified and resolved before it impacts your users or rankings.",
           "A monthly website health report covering uptime, speed scores, security status, and SEO performance, so you always know where your site stands."
         ],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+        image: "/services/web/website_Maintenance.jpg"
       }
     ],
     process: {
-  label: "Process",
-  heading: "How We Build High Performance Websites.",
-  subheading: "A structured web design and development process from first idea to final launch.",
-  steps: [
-    {
-      id: "insight",
-      number: "01.",
-      title: "Insight",
-      description: "We dive deep into your brand, audience, competitors, and business goals to uncover the insights that shape a winning website strategy."
+      label: "Process",
+      heading: "How We Build High Performance Websites.",
+      subheading: "A structured web design and development process from first idea to final launch.",
+      steps: [
+        {
+          id: "insight",
+          number: "01.",
+          title: "Insight",
+          description: "We dive deep into your brand, audience, competitors, and business goals to uncover the insights that shape a winning website strategy."
+        },
+        {
+          id: "foundation",
+          number: "02.",
+          title: "Foundation",
+          description: "We define your site architecture, content hierarchy, and SEO keyword strategy, laying the technical and strategic groundwork before design begins."
+        },
+        {
+          id: "wireframe",
+          number: "03.",
+          title: "Wireframe",
+          description: "We map every page layout, user flow, and conversion path through detailed wireframes, making sure the experience feels intuitive before visuals come in."
+        },
+        {
+          id: "design",
+          number: "04.",
+          title: "Design",
+          description: "Our designers craft pixel perfect, high fidelity layouts in Figma with brand consistent visuals, responsive grids, and accessibility built in."
+        },
+        {
+          id: "development",
+          number: "05.",
+          title: "Development",
+          description: "We bring designs to life with clean, scalable code using React, Next.js, and Node.js, building fast, SEO ready, fully responsive websites."
+        },
+        {
+          id: "testing",
+          number: "06.",
+          title: "Testing & QA",
+          description: "Every site is tested across browsers and devices for speed, responsiveness, broken links, and Core Web Vitals before it ever goes live."
+        },
+        {
+          id: "launch",
+          number: "07.",
+          title: "Launch & Support",
+          description: "Your website goes live with full deployment, analytics, and indexing setup, followed by ongoing support to keep it running at peak performance."
+        }
+      ]
     },
-    {
-      id: "foundation",
-      number: "02.",
-      title: "Foundation",
-      description: "We define your site architecture, content hierarchy, and SEO keyword strategy, laying the technical and strategic groundwork before design begins."
-    },
-    {
-      id: "wireframe",
-      number: "03.",
-      title: "Wireframe",
-      description: "We map every page layout, user flow, and conversion path through detailed wireframes, making sure the experience feels intuitive before visuals come in."
-    },
-    {
-      id: "design",
-      number: "04.",
-      title: "Design",
-      description: "Our designers craft pixel perfect, high fidelity layouts in Figma with brand consistent visuals, responsive grids, and accessibility built in."
-    },
-    {
-      id: "development",
-      number: "05.",
-      title: "Development",
-      description: "We bring designs to life with clean, scalable code using React, Next.js, and Node.js, building fast, SEO ready, fully responsive websites."
-    },
-    {
-      id: "testing",
-      number: "06.",
-      title: "Testing & QA",
-      description: "Every site is tested across browsers and devices for speed, responsiveness, broken links, and Core Web Vitals before it ever goes live."
-    },
-    {
-      id: "launch",
-      number: "07.",
-      title: "Launch & Support",
-      description: "Your website goes live with full deployment, analytics, and indexing setup, followed by ongoing support to keep it running at peak performance."
-    }
-  ]
-},
     techStack: [
       { id: "ts", name: "TypeScript", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
       { id: "react", name: "React", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
@@ -217,58 +217,58 @@ export const servicesData: Record<string, ServiceData> = {
       { id: "supabase", name: "Supabase", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" },
     ],
     deliverables: {
-  label: "FAQ",
-  heading: "Frequently Asked Questions.",
-  subheading: "Everything you need to know about working with us on your web design and development project.",
-  items: [
-    {
-      id: "project-timeline",
-      title: "How long does it take to design and develop a website?",
-      description: "Most websites take 4 to 8 weeks from kickoff to launch, depending on complexity. A landing page can go live in 2 to 3 weeks, while custom web applications and large e commerce stores may take 8 to 12 weeks."
+      label: "FAQ",
+      heading: "Frequently Asked Questions.",
+      subheading: "Everything you need to know about working with us on your web design and development project.",
+      items: [
+        {
+          id: "project-timeline",
+          title: "How long does it take to design and develop a website?",
+          description: "Most websites take 4 to 8 weeks from kickoff to launch, depending on complexity. A landing page can go live in 2 to 3 weeks, while custom web applications and large e commerce stores may take 8 to 12 weeks."
+        },
+        {
+          id: "content-requirement",
+          title: "Do I need to provide content and images for my website?",
+          description: "You can provide your own content and images, or our team can handle copywriting, photography sourcing, and content strategy as part of the project. We make the process simple either way."
+        },
+        {
+          id: "tech-stack",
+          title: "What technologies do you use to build websites?",
+          description: "We build with modern, scalable technologies including React, Next.js, Node.js, WordPress, Webflow, and Shopify. The right stack is chosen based on your business goals, budget, and long term scalability."
+        },
+        {
+          id: "seo-included",
+          title: "Will my website be SEO ready and optimised for Google?",
+          description: "Yes, every website we build comes with complete on page SEO including meta tags, clean URLs, schema markup, XML sitemaps, and Core Web Vitals optimisation, ensuring it is ready to rank from day one."
+        },
+        {
+          id: "mobile-responsive",
+          title: "Will my website work on mobile and tablet devices?",
+          description: "Absolutely. Every website is fully responsive and tested across desktop, tablet, and mobile, with a mobile first design approach since over 60% of users browse on mobile devices."
+        },
+        {
+          id: "cms-control",
+          title: "Can I update my website on my own after launch?",
+          description: "Yes, every website comes with an easy to use CMS like WordPress, Webflow, or a custom admin panel, allowing you to update content, blogs, images, and pages without writing any code."
+        },
+        {
+          id: "post-launch-support",
+          title: "Do you provide support after the website goes live?",
+          description: "Yes, we offer dedicated post launch support including bug fixes, security updates, performance monitoring, and content updates. Monthly maintenance plans are also available for long term care."
+        },
+        {
+          id: "ecommerce-platforms",
+          title: "Can you build e commerce websites on Shopify or WooCommerce?",
+          description: "Yes, we build e commerce stores on Shopify, WooCommerce, and custom frameworks with secure payment gateways, inventory management, and SEO friendly product pages built to convert."
+        },
+        {
+          id: "ownership-rights",
+          title: "Will I own the website and source code after launch?",
+          description: "Yes, you receive full ownership of your website along with all source files, design assets, and admin access. There are no hidden lock ins or vendor dependencies."
+        }
+      ]
     },
-    {
-      id: "content-requirement",
-      title: "Do I need to provide content and images for my website?",
-      description: "You can provide your own content and images, or our team can handle copywriting, photography sourcing, and content strategy as part of the project. We make the process simple either way."
-    },
-    {
-      id: "tech-stack",
-      title: "What technologies do you use to build websites?",
-      description: "We build with modern, scalable technologies including React, Next.js, Node.js, WordPress, Webflow, and Shopify. The right stack is chosen based on your business goals, budget, and long term scalability."
-    },
-    {
-      id: "seo-included",
-      title: "Will my website be SEO ready and optimised for Google?",
-      description: "Yes, every website we build comes with complete on page SEO including meta tags, clean URLs, schema markup, XML sitemaps, and Core Web Vitals optimisation, ensuring it is ready to rank from day one."
-    },
-    {
-      id: "mobile-responsive",
-      title: "Will my website work on mobile and tablet devices?",
-      description: "Absolutely. Every website is fully responsive and tested across desktop, tablet, and mobile, with a mobile first design approach since over 60% of users browse on mobile devices."
-    },
-    {
-      id: "cms-control",
-      title: "Can I update my website on my own after launch?",
-      description: "Yes, every website comes with an easy to use CMS like WordPress, Webflow, or a custom admin panel, allowing you to update content, blogs, images, and pages without writing any code."
-    },
-    {
-      id: "post-launch-support",
-      title: "Do you provide support after the website goes live?",
-      description: "Yes, we offer dedicated post launch support including bug fixes, security updates, performance monitoring, and content updates. Monthly maintenance plans are also available for long term care."
-    },
-    {
-      id: "ecommerce-platforms",
-      title: "Can you build e commerce websites on Shopify or WooCommerce?",
-      description: "Yes, we build e commerce stores on Shopify, WooCommerce, and custom frameworks with secure payment gateways, inventory management, and SEO friendly product pages built to convert."
-    },
-    {
-      id: "ownership-rights",
-      title: "Will I own the website and source code after launch?",
-      description: "Yes, you receive full ownership of your website along with all source files, design assets, and admin access. There are no hidden lock ins or vendor dependencies."
-    }
-  ]
-},
-ctaText: "Let's Build a Website Your Competitors Wish They Had."
+    ctaText: "Let's Build a Website Your Competitors Wish They Had."
   },
   "graphic-design": {
     slug: "graphic-design",
@@ -293,7 +293,7 @@ ctaText: "Let's Build a Website Your Competitors Wish They Had."
           "Complete brand identity systems with colour palettes, typography, iconography, and visual style guidelines that build a cohesive look.",
           "Multiple concept rounds and refinements to ensure your final logo is delivered in every format including AI, EPS, SVG, PNG, and PDF."
         ],
-        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80"
+        image: "/services/graphic/branding.png"
       },
       {
         id: "social-media-design",
@@ -303,7 +303,7 @@ ctaText: "Let's Build a Website Your Competitors Wish They Had."
           "Reusable content templates that help your team maintain a consistent, on brand presence without needing a designer for every post.",
           "Designs optimised for both organic reach and paid campaigns, with clear hierarchy and strong CTAs that drive engagement and conversion."
         ],
-        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+        image: "/services/graphic/content_design.png"
       },
       {
         id: "marketing-advertising-creatives",
@@ -313,7 +313,7 @@ ctaText: "Let's Build a Website Your Competitors Wish They Had."
           "Multiple creative variations designed for A/B testing, helping you find the headlines, visuals, and layouts that perform best.",
           "Persuasive design paired with strategic copywriting to grab attention in the first 2 seconds and drive measurable clicks and conversions."
         ],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+        image: "/services/graphic/advertising.png"
       },
       {
         id: "print-marketing-collateral",
@@ -323,7 +323,7 @@ ctaText: "Let's Build a Website Your Competitors Wish They Had."
           "Single page and multi page layouts for product catalogues, company profiles, event invitations, and trade show materials.",
           "Paper stock recommendations, finishing options, and direct coordination with your printer for a hassle free production experience."
         ],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+        image: "/services/graphic/new_design_print.png"
       },
       {
         id: "packaging-design",
@@ -333,7 +333,7 @@ ctaText: "Let's Build a Website Your Competitors Wish They Had."
           "Packaging design for food and beverage, cosmetics, health and wellness, fashion, electronics, and consumer goods across retail and e commerce.",
           "Print ready files with accurate die lines, bleed areas, and colour specifications so your manufacturer can produce flawlessly without back and forth."
         ],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+        image: "/services/graphic/design_packaging.png"
       },
       {
         id: "presentation-pitch-deck",
@@ -343,7 +343,7 @@ ctaText: "Let's Build a Website Your Competitors Wish They Had."
           "Fully editable templates in PowerPoint, Keynote, and Google Slides that your team can reuse and customise for future presentations.",
           "Storytelling flow and visual hierarchy optimisation to ensure your key message lands with maximum impact and audience focus."
         ],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+        image: "/services/graphic/new_presentation.png"
       },
       {
         id: "infographic-data-visualisation",
@@ -353,7 +353,7 @@ ctaText: "Let's Build a Website Your Competitors Wish They Had."
           "Designs optimised for both web and print, with SEO friendly alt text recommendations for digital and high resolution exports for print.",
           "Every infographic styled with your brand colours, typography, and visual identity for seamless integration with your existing content."
         ],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+        image: "/services/graphic/new_infographic.png"
       },
       {
         id: "brand-guidelines",
@@ -363,52 +363,52 @@ ctaText: "Let's Build a Website Your Competitors Wish They Had."
           "Real world application examples showing how your brand should appear across websites, social media, business cards, packaging, and signage.",
           "A documented visual identity that protects your brand consistency as your team grows or you collaborate with external agencies."
         ],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+        image: "/services/graphic/brand_guidelines.png"
       }
     ],
     process: {
-  label: "Process",
-  heading: "How We Design Visuals That Drive Results.",
-  subheading: "A structured graphic design process from creative brief to final delivery.",
-  steps: [
-    {
-      id: "discovery",
-      number: "01.",
-      title: "Discovery",
-      description: "We start with a detailed creative brief, learning about your brand, audience, competitors, design preferences, and business goals."
+      label: "Process",
+      heading: "How We Design Visuals That Drive Results.",
+      subheading: "A structured graphic design process from creative brief to final delivery.",
+      steps: [
+        {
+          id: "discovery",
+          number: "01.",
+          title: "Discovery",
+          description: "We start with a detailed creative brief, learning about your brand, audience, competitors, design preferences, and business goals."
+        },
+        {
+          id: "research",
+          number: "02.",
+          title: "Research & Moodboarding",
+          description: "We analyse industry trends, competitor visuals, and audience preferences, then build mood boards with colour, typography, and imagery directions."
+        },
+        {
+          id: "concept",
+          number: "03.",
+          title: "Concept Development",
+          description: "Our designers create multiple initial concepts, exploring different visual approaches, compositions, and styles to find the strongest direction."
+        },
+        {
+          id: "execution",
+          number: "04.",
+          title: "Design Execution",
+          description: "We move into full production, crafting every element with pixel perfect precision and brand consistent styling across all required formats."
+        },
+        {
+          id: "refinement",
+          number: "05.",
+          title: "Feedback & Refinement",
+          description: "We share the work for review and refine colours, layouts, typography, and imagery until every element meets your expectations."
+        },
+        {
+          id: "delivery",
+          number: "06.",
+          title: "Final Delivery",
+          description: "All approved designs are exported in print ready and web optimised formats including AI, EPS, SVG, PDF, PNG, and JPG, organised in a structured file package."
+        }
+      ]
     },
-    {
-      id: "research",
-      number: "02.",
-      title: "Research & Moodboarding",
-      description: "We analyse industry trends, competitor visuals, and audience preferences, then build mood boards with colour, typography, and imagery directions."
-    },
-    {
-      id: "concept",
-      number: "03.",
-      title: "Concept Development",
-      description: "Our designers create multiple initial concepts, exploring different visual approaches, compositions, and styles to find the strongest direction."
-    },
-    {
-      id: "execution",
-      number: "04.",
-      title: "Design Execution",
-      description: "We move into full production, crafting every element with pixel perfect precision and brand consistent styling across all required formats."
-    },
-    {
-      id: "refinement",
-      number: "05.",
-      title: "Feedback & Refinement",
-      description: "We share the work for review and refine colours, layouts, typography, and imagery until every element meets your expectations."
-    },
-    {
-      id: "delivery",
-      number: "06.",
-      title: "Final Delivery",
-      description: "All approved designs are exported in print ready and web optimised formats including AI, EPS, SVG, PDF, PNG, and JPG, organised in a structured file package."
-    }
-  ]
-},
     techStack: [
       { id: "photoshop", name: "Adobe Photoshop", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" },
       { id: "illustrator", name: "Adobe Illustrator", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" },
@@ -420,58 +420,58 @@ ctaText: "Let's Build a Website Your Competitors Wish They Had."
       { id: "canva", name: "Canva Pro", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" },
     ],
     deliverables: {
-  label: "FAQ",
-  heading: "Frequently Asked Questions.",
-  subheading: "Everything you need to know about working with us on your graphic design project.",
-  items: [
-    {
-      id: "project-timeline",
-      title: "How long does a graphic design project take?",
-      description: "Most projects take 1 to 4 weeks depending on scope. A logo design takes 7 to 10 days, a full brand identity 3 to 4 weeks, and ongoing social media or marketing collateral runs on a monthly retainer schedule."
+      label: "FAQ",
+      heading: "Frequently Asked Questions.",
+      subheading: "Everything you need to know about working with us on your graphic design project.",
+      items: [
+        {
+          id: "project-timeline",
+          title: "How long does a graphic design project take?",
+          description: "Most projects take 1 to 4 weeks depending on scope. A logo design takes 7 to 10 days, a full brand identity 3 to 4 weeks, and ongoing social media or marketing collateral runs on a monthly retainer schedule."
+        },
+        {
+          id: "design-revisions",
+          title: "How many design revisions are included?",
+          description: "We include multiple revision rounds in every project to ensure the final design meets your expectations. Most clients reach final approval within 2 to 3 rounds of refinement."
+        },
+        {
+          id: "file-formats",
+          title: "What file formats will I receive after the project?",
+          description: "You receive every design in print ready and web optimised formats including AI, EPS, SVG, PDF, PNG, and JPG, along with editable source files and brand assets."
+        },
+        {
+          id: "brand-identity",
+          title: "Do you create complete brand identity systems or just logos?",
+          description: "We design complete brand identity systems including logo, colour palette, typography, iconography, brand guidelines, and visual application examples across every touchpoint."
+        },
+        {
+          id: "social-media-design",
+          title: "Can you handle our ongoing social media design needs?",
+          description: "Yes, we offer monthly social media design packages including post templates, story designs, carousel layouts, reel covers, and ad creatives tailored for every major platform."
+        },
+        {
+          id: "print-design",
+          title: "Do you handle print production and printer coordination?",
+          description: "Yes, we deliver print ready files in CMYK with proper bleed and trim, and we coordinate directly with your printer to ensure flawless production from start to finish."
+        },
+        {
+          id: "packaging-design",
+          title: "Can you design product packaging for retail and e commerce?",
+          description: "Yes, we design packaging for food and beverage, cosmetics, fashion, electronics, and consumer goods with accurate die lines, label design, and manufacturer ready files."
+        },
+        {
+          id: "ownership-rights",
+          title: "Will I own the designs and source files after delivery?",
+          description: "Yes, you receive full ownership of your designs along with all source files, fonts, and brand assets. No hidden lock ins or licensing dependencies."
+        },
+        {
+          id: "pricing-quote",
+          title: "How much does a graphic design project cost?",
+          description: "Pricing depends on the scope, deliverables, and complexity of your project. Logo design, brand identity, social media, and print collateral each have different starting points. Share your requirements for a tailored quote."
+        }
+      ]
     },
-    {
-      id: "design-revisions",
-      title: "How many design revisions are included?",
-      description: "We include multiple revision rounds in every project to ensure the final design meets your expectations. Most clients reach final approval within 2 to 3 rounds of refinement."
-    },
-    {
-      id: "file-formats",
-      title: "What file formats will I receive after the project?",
-      description: "You receive every design in print ready and web optimised formats including AI, EPS, SVG, PDF, PNG, and JPG, along with editable source files and brand assets."
-    },
-    {
-      id: "brand-identity",
-      title: "Do you create complete brand identity systems or just logos?",
-      description: "We design complete brand identity systems including logo, colour palette, typography, iconography, brand guidelines, and visual application examples across every touchpoint."
-    },
-    {
-      id: "social-media-design",
-      title: "Can you handle our ongoing social media design needs?",
-      description: "Yes, we offer monthly social media design packages including post templates, story designs, carousel layouts, reel covers, and ad creatives tailored for every major platform."
-    },
-    {
-      id: "print-design",
-      title: "Do you handle print production and printer coordination?",
-      description: "Yes, we deliver print ready files in CMYK with proper bleed and trim, and we coordinate directly with your printer to ensure flawless production from start to finish."
-    },
-    {
-      id: "packaging-design",
-      title: "Can you design product packaging for retail and e commerce?",
-      description: "Yes, we design packaging for food and beverage, cosmetics, fashion, electronics, and consumer goods with accurate die lines, label design, and manufacturer ready files."
-    },
-    {
-      id: "ownership-rights",
-      title: "Will I own the designs and source files after delivery?",
-      description: "Yes, you receive full ownership of your designs along with all source files, fonts, and brand assets. No hidden lock ins or licensing dependencies."
-    },
-    {
-      id: "pricing-quote",
-      title: "How much does a graphic design project cost?",
-      description: "Pricing depends on the scope, deliverables, and complexity of your project. Logo design, brand identity, social media, and print collateral each have different starting points. Share your requirements for a tailored quote."
-    }
-  ]
-},
-ctaText: "Let's Design Something Your Audience Can't Look Away From."
+    ctaText: "Let's Design Something Your Audience Can't Look Away From."
   },
   "motion-graphics": {
     slug: "motion-graphics",
@@ -496,17 +496,17 @@ ctaText: "Let's Design Something Your Audience Can't Look Away From."
           "Full production pipeline including concept ideation, scriptwriting, storyboarding, motion design, sound design, and final rendering for monthly content flow.",
           "Hook driven openings, clear brand messaging, and strong CTAs designed to drive clicks, follows, and conversions across organic and paid promotion."
         ],
-        image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80"
+        image: "/services/motion/production.png"
       },
       {
         id: "explainer-video",
-        title: "Explainer Video Production",
+        title: "Explainer Video production",
         items: [
           "Animated explainer videos that break down complex products and services into clear, engaging visual stories built to drive action.",
           "Multiple animation styles including 2D character animation, motion graphics, kinetic typography, and isometric illustration tailored to your brand.",
           "Delivered in multiple lengths from 30 second teasers to full 90 to 120 second versions, optimised for website, social, email, and paid campaigns."
         ],
-        image: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=800&q=80"
+        image: "/services/motion/explainer.png"
       },
       {
         id: "advertising-ppc-videos",
@@ -516,7 +516,7 @@ ctaText: "Let's Design Something Your Audience Can't Look Away From."
           "Multiple ad variations in different lengths (6s, 15s, 30s, 60s) and aspect ratios for flexible A/B testing and lower cost per acquisition.",
           "Platform specific best practices including skip proof YouTube openings, sound off optimisation for Meta, and professional framing for LinkedIn."
         ],
-        image: "https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=800&q=80"
+        image: "/services/motion/advertising.png"
       },
       {
         id: "brand-corporate-video",
@@ -526,7 +526,7 @@ ctaText: "Let's Design Something Your Audience Can't Look Away From."
           "Custom video content for company introductions, leadership messages, event recaps, recruitment campaigns, and internal communication.",
           "Delivered in multiple formats including web optimised MP4, social media cuts, and high resolution versions for events and presentations."
         ],
-        image: "https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=800&q=80"
+        image: "/services/motion/corporate.png"
       },
       {
         id: "product-demo-videos",
@@ -536,7 +536,7 @@ ctaText: "Let's Design Something Your Audience Can't Look Away From."
           "Built for website product pages, e commerce listings on Amazon and Flipkart, social media, crowdfunding campaigns, and sales pitch decks.",
           "On screen text overlays, spec callouts, and animated highlights ensure your selling points land clearly even when watched without sound."
         ],
-        image: "https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=800&q=80"
+        image: "/services/motion/showcase.png"
       },
       {
         id: "logo-animation",
@@ -546,7 +546,7 @@ ctaText: "Let's Design Something Your Audience Can't Look Away From."
           "Delivered in multiple formats including transparent PNG sequence, MP4, GIF, and Lottie JSON for video, web, app loaders, and email signatures.",
           "Brand motion identity packages with animated logo, transition elements, and lower third templates for cohesive video storytelling."
         ],
-        image: "https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=800&q=80"
+        image: "/services/motion/logo_animation.png"
       },
       {
         id: "presentation-event-graphics",
@@ -556,7 +556,7 @@ ctaText: "Let's Design Something Your Audience Can't Look Away From."
           "Designed for both live events and virtual or hybrid formats, optimised for LED walls, projectors, and platforms like Zoom and Teams.",
           "Animated data visualisations and dynamic slide builds that make complex information engaging and easier for your audience to follow."
         ],
-        image: "https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=800&q=80"
+        image: "/services/motion/events.png"
       },
       {
         id: "video-editing-post-production",
@@ -566,7 +566,7 @@ ctaText: "Let's Design Something Your Audience Can't Look Away From."
           "Advanced post production including green screen compositing, multi camera editing, audio cleanup, subtitles, and animated text overlays.",
           "Every video exported in platform optimised formats and resolutions, from 4K master files to compressed social cuts ready for instant publishing."
         ],
-        image: "https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=800&q=80"
+        image: "/services/motion/post_production.png"
       }
     ],
     process: {
@@ -700,7 +700,7 @@ ctaText: "Let's Design Something Your Audience Can't Look Away From."
           "Performance tracking on reach, impressions, engagement, follower growth, and click through rate, with monthly optimisation based on platform algorithms.",
           "Trending format expertise across Reels, Shorts, Carousels, Stories, and live content to maximise organic visibility without relying solely on paid promotion."
         ],
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+        image: "/services/digital/social_media_strategy.png"
       },
       {
         id: "social-media-content",
@@ -710,7 +710,7 @@ ctaText: "Let's Design Something Your Audience Can't Look Away From."
           "Monthly content calendars with a strategic mix of educational, promotional, entertaining, and community building posts that keep your audience engaged.",
           "Caption writing with SEO optimised hashtag research using high performing and niche specific tags that expand your organic reach."
         ],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+        image: "/services/digital/content_creation.png"
       },
       {
         id: "influencer-marketing",
@@ -720,7 +720,7 @@ ctaText: "Let's Design Something Your Audience Can't Look Away From."
           "End to end influencer campaign management including planning, content briefs, deliverable timelines, performance tracking, ROI measurement, and approvals.",
           "Influencer generated content (IGC) repurposed across your social media, ads, and website to build authentic trust and drive higher conversion rates."
         ],
-        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80"
+        image: "/services/digital/influencer_collaborations.png"
       },
       {
         id: "social-media-ads",
@@ -730,7 +730,7 @@ ctaText: "Let's Design Something Your Audience Can't Look Away From."
           "Full campaign setup including ad account configuration, pixel installation, event tracking, custom audiences, and budget optimisation from day one.",
           "Strategic scaling of winning ad sets with weekly and monthly reports covering impressions, reach, CTR, CPC, ROAS, and conversion data."
         ],
-        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
+        image: "/services/digital/ddvertising.png"
       },
       {
         id: "search-engine-optimisation",
@@ -740,7 +740,7 @@ ctaText: "Let's Design Something Your Audience Can't Look Away From."
           "In depth keyword research using SEMrush, Ahrefs, and Google Keyword Planner targeting high intent, low competition keywords, plus ethical link building and digital PR.",
           "Monthly SEO performance reports with keyword rankings, organic traffic trends, backlink growth, and clear action recommendations for sustained growth."
         ],
-        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
+        image: "/services/digital/seo.png"
       },
       {
         id: "google-ads-ppc",
@@ -750,7 +750,7 @@ ctaText: "Let's Design Something Your Audience Can't Look Away From."
           "Compelling ad copy with strong headlines, clear value propositions, and action driven CTAs, paired with continuous A/B testing for higher click through and conversion rates.",
           "Complete conversion tracking, remarketing audience creation, landing page alignment, and transparent performance reporting on every rupee spent."
         ],
-        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
+        image: "/services/digital/ppc.png"
       },
       {
         id: "marketplace-growth",
@@ -760,7 +760,7 @@ ctaText: "Let's Design Something Your Audience Can't Look Away From."
           "Marketplace advertising including Amazon Sponsored Products, Sponsored Brands, Flipkart PLA, and deal participation strategies to drive traffic, improve Best Seller Rank, and increase sales volume.",
           "Ongoing marketplace operations including inventory coordination, pricing strategy, review management, competitor monitoring, and monthly performance reporting to scale revenue consistently."
         ],
-        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
+        image: "/services/digital/marketplace.png"
       },
       {
         id: "content-marketing",
@@ -770,7 +770,7 @@ ctaText: "Let's Design Something Your Audience Can't Look Away From."
           "Full content pipeline from topic ideation and calendar planning to writing, editing, on page SEO, and publishing for consistent output without team burnout.",
           "Topical authority building through content clusters around your core services and products, strengthening your overall SEO and domain relevance."
         ],
-        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
+        image: "/services/digital/blogging.png"
       }
     ],
     process: {

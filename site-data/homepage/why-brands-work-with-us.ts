@@ -81,7 +81,7 @@ export const whyBrandsCards: WhyBrandsCard[] = [
   },
   {
     type: "video",
-    src: "/home/team.mp4",
+    src: "/home/time.mp4",
     alt: "Team collaboration",
     poster: "",
     rotation: "-rotate-3",
@@ -99,7 +99,7 @@ export const whyBrandsCards: WhyBrandsCard[] = [
   },
   {
     type: "video",
-    src: "/home/team.mp4",
+    src: "/home/client.mp4",
     alt: "Team collaboration",
     poster: "",
     rotation: "-rotate-3",

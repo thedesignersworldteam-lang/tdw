@@ -38,7 +38,7 @@ export const clientTypeCards: ClientTypeCard[] = [
     bg: "bg-[#4a88f5]",
     color: "#4a88f5",
     iconKey: "small-business",
-    lottieSrc: "/home/card1.json",
+    lottieSrc: "/home/card2.json",
     offset: "mt-10 md:mt-16",
   },
   {
@@ -47,7 +47,7 @@ export const clientTypeCards: ClientTypeCard[] = [
     bg: "bg-[#6bb88b]",
     color: "#6bb88b",
     iconKey: "premium-brand",
-    lottieSrc: "/home/card1.json",
+    lottieSrc: "/home/card3.json",
     offset: "mt-0",
   },
 ];

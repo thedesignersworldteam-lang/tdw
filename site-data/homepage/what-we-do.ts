@@ -34,7 +34,7 @@ export const services: ServiceCard[] = [
     backgroundTailwind: "bg-[#65C495]",
     backgroundColor:    "#65C495",
     href:               "https://thedesignersworld.com/services/web-design-and-development",
-    image:              "https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&q=80",
+    image:              "/services/website/website.png",
     imageAlt:           "Web design and development workspace",
   },
   {
@@ -44,7 +44,7 @@ export const services: ServiceCard[] = [
     backgroundTailwind: "bg-[#F7C518]",
     backgroundColor:    "#ffc800ff",
     href:               "/services/digital-marketing",
-    image:              "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80",
+    image:              "services/digital/seo.png",
     imageAlt:           "Digital marketing strategy illustration",
   },
   {
@@ -54,7 +54,7 @@ export const services: ServiceCard[] = [
     backgroundTailwind: "bg-[#FD6824]",
     backgroundColor:    "#FD6824",
     href:               "/services/social-media-management",
-    image:              "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80",
+    image:              "services/graphic/design_packaging.png",
     imageAlt:           "Social media management on mobile",
   },
   {
@@ -64,7 +64,7 @@ export const services: ServiceCard[] = [
     backgroundTailwind: "bg-[#408BF7]",
     backgroundColor:    "#408BF7",
     href:               "/services/brand-strategy",
-    image:              "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80",
+    image:              "services/motion/explainer.png",
     imageAlt:           "Brand strategy and identity design",
   },
 ];
