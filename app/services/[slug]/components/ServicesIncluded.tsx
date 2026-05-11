@@ -21,7 +21,7 @@ const IncludedCard = ({ item, index, total }: { item: ServiceIncluded, index: nu
                     
                     <ul className="space-y-4 md:space-y-8 list-disc list-inside md:list-outside pl-0 md:pl-6 text-[#171717]">
                         {item.items.map((listItem, i) => (
-                            <li key={i} className="text-base md:text-lg lg:text-xl font-medium leading-relaxed max-w-full md:max-w-[85%] lg:max-w-[90%] md:pl-2">
+                            <li key={i} className="text-base md:text-lg lg:text-xl font-medium leading-relaxed max-w-full md:pl-2">
                                 <span>
                                     {listItem}
                                 </span>

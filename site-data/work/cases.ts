@@ -13,8 +13,10 @@ export interface CaseStudy {
   title: string;
   /** Short description shown at the bottom of the scroller layer */
   description: string;
-  /** Full body copy shown on the individual case page */
+  /** Full body copy shown on the individual case page (Simple Text Section) */
   fullDescription: string;
+  /** Body paragraph shown in the Overview section */
+  overviewDescription?: string;
   /** Background video — shown in the scroller and OurWork preview (muted autoplay) */
   video: string;
   /** Still image — shown on hover in the OurWork preview */
@@ -41,6 +43,8 @@ export interface CaseStudy {
   homepageMediaRestUrl?: string;
   homepageMediaHoverType?: "image" | "video";
   homepageMediaHoverUrl?: string;
+  /** Flag to show this case on the homepage (up to 6) */
+  showOnHomepage?: boolean;
 }
 
 // ── Cases ─────────────────────────────────────────────────────
@@ -53,6 +57,7 @@ export const casesData: CaseStudy[] = [
     title: "ICMR Micro Website",
     description: "Harnessing AI to transform how the art world engages.",
     fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    overviewDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     video: "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4",
     image: "/work/icmr/header.png",
     imageAlt: "Art Basel project still",
@@ -70,6 +75,7 @@ export const casesData: CaseStudy[] = [
     homepageMediaRestUrl: "/work/icmr/icmr2.png",
     homepageMediaHoverType: "image",
     homepageMediaHoverUrl: "/work/icmr/icmr2.png",
+    showOnHomepage: true,
   },
   {
     id: "jeap",
@@ -77,6 +83,7 @@ export const casesData: CaseStudy[] = [
     title: "JEAP Website",
     description: "Reimagining creative boundaries with immersive digital experiences.",
     fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    overviewDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     video: "https://videos.pexels.com/video-files/2882118/2882118-uhd_2560_1440_24fps.mp4",
     image: "/work/jeap/header.jpg",
     imageAlt: "Frieze LA project still",
@@ -93,7 +100,8 @@ export const casesData: CaseStudy[] = [
     homepageMediaRestType: "image",
     homepageMediaRestUrl: "/work/jeap/header.jpg",
     homepageMediaHoverType: "image",
-    homepageMediaHoverUrl: "/work/jeap/jeap2.jpg"
+    homepageMediaHoverUrl: "/work/jeap/jeap2.jpg",
+    showOnHomepage: true,
   },
   {
     id: "Addis",
@@ -101,6 +109,7 @@ export const casesData: CaseStudy[] = [
     title: "Addis",
     description: "Connecting Africa's leaders, communities, and health institutions through one powerful digital voice.",
     fullDescription: "The Addis Declaration on Immunisation is a continental commitment signed by African Union Heads of State to achieve universal immunisation access by 2030. We were tasked with building a website that brings this declaration to life, makes its progress measurable, and gives stakeholders, governments, and the public a single trusted source for updates, reports, and resources.",
+    overviewDescription: "The Addis Declaration on Immunisation is a continental commitment signed by African Union Heads of State to achieve universal immunisation access by 2030. We were tasked with building a website that brings this declaration to life, makes its progress measurable, and gives stakeholders, governments, and the public a single trusted source for updates, reports, and resources.",
     video: "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4",
     image: "/work/addis/header.png",
     imageAlt: "Tate Modern project still",
@@ -117,7 +126,8 @@ export const casesData: CaseStudy[] = [
     homepageMediaRestType: "image",
     homepageMediaRestUrl: "/work/addis/header.png",
     homepageMediaHoverType: "image",
-    homepageMediaHoverUrl: "/work/addis/header.png"
+    homepageMediaHoverUrl: "/work/addis/header.png",
+    showOnHomepage: true,
   },
   {
     id: "who",
@@ -125,6 +135,7 @@ export const casesData: CaseStudy[] = [
     title: "WHO Report Design",
     description: "Connecting legacy art institutions with modern sensory technologies.",
     fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    overviewDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     video: "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4",
     image: "/work/who/header.png",
     imageAlt: "Tate Modern project still",
@@ -141,7 +152,8 @@ export const casesData: CaseStudy[] = [
     homepageMediaRestType: "image",
     homepageMediaRestUrl: "/work/addis/addis_1920X1080.jpg",
     homepageMediaHoverType: "video",
-    homepageMediaHoverUrl: "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4"
+    homepageMediaHoverUrl: "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4",
+    showOnHomepage: true,
   },
   {
     id: "undp",
@@ -149,6 +161,7 @@ export const casesData: CaseStudy[] = [
     title: "UNDP ",
     description: "Connecting legacy art institutions with modern sensory technologies.",
     fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    overviewDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     video: "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4",
     image: "/work/undp/header.png",
     imageAlt: "Tate Modern project still",
@@ -165,6 +178,8 @@ export const casesData: CaseStudy[] = [
     homepageMediaRestType: "image",
     homepageMediaRestUrl: "/work/addis/addis_1920X1080.jpg",
     homepageMediaHoverType: "video",
-    homepageMediaHoverUrl: "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4"
+    homepageMediaHoverUrl: "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4",
+    showOnHomepage: true,
+  
   },
 ];

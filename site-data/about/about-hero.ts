@@ -5,7 +5,7 @@
 
 // ── Heading ───────────────────────────────────────────────────
 export const aboutHeroHeading = {
-  text: "The Creative Studio Behind Bold Brands & Bigger Ideas.",
+  text: "The Creative Studio Behind\nBold Brands & Bigger Ideas.",
   fontSize: "text-4xl md:text-6xl lg:text-[6rem]",
   fontWeight: "font-bold",
   color: "#171717",
@@ -52,7 +52,7 @@ export const aboutHeroParallax = {
 
 // ── Section Layout ────────────────────────────────────────────
 export const aboutHeroLayout = {
-  textSectionHeight: "h-[80vh]",
+  textSectionHeight: "h-[65vh]",
   imageWidth: "w-[90vw]",
   imageHeight: "h-[100vh]",
   imageRadius: "rounded-3xl",

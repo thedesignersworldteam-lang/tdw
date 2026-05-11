@@ -107,9 +107,9 @@ export default async function CaseSubPage(props: any) {
                         <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#171717] max-w-3xl leading-[1.3]">
                             {caseData.description}
                         </h3>
-                        {/* Body paragraph mapped to fullDescription */}
+                        {/* Body paragraph mapped to overviewDescription */}
                         <p className="text-[#171717] text-lg md:text-xl font-medium leading-relaxed font-sans max-w-4xl">
-                            {caseData.fullDescription}
+                            {caseData.overviewDescription || caseData.fullDescription}
                         </p>
                     </div>
                 </div>

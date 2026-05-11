@@ -13,14 +13,15 @@ import {
 
 // ─── Emoji burst on "Great Results" ────────────────────────────
 const GreatResults = () => {
-    const ref = useRef<HTMLDivElement>(null);
-    const isInView = useInView(ref, { once: true, amount: 0.4 });
+    const textRef = useRef<HTMLHeadingElement>(null);
+    const isInView = useInView(textRef, { once: true, margin: "0px 0px -50% 0px" });
     const emojis = Array.from({ length: 20 }, (_, i) => i % 2 === 0 ? "😍" : "🔥");
     const { greatResults } = expertCopy;
 
     return (
-        <div ref={ref} className="h-screen w-full flex flex-col items-center justify-center relative overflow-hidden">
+        <div className="h-screen w-full flex flex-col items-center justify-center relative overflow-hidden">
             <motion.h2
+                ref={textRef}
                 initial={{ scale: 0.1, opacity: 0 }}
                 animate={isInView ? { scale: 1, opacity: 1 } : { scale: 0.1, opacity: 0 }}
                 transition={{ type: "spring", stiffness: 260, damping: 14, delay: 0.1 }}

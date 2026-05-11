@@ -28,9 +28,9 @@ export default function AboutHero() {
 
     return (
         <section className="w-full relative flex flex-col items-center">
-            <div className={`w-full ${aboutHeroLayout.textSectionHeight} flex flex-col items-center justify-center ${aboutHeroLayout.paddingX}`}>
+            <div className={`w-full ${aboutHeroLayout.textSectionHeight} flex flex-col items-center justify-end pb-12 md:pb-16 pt-32 ${aboutHeroLayout.paddingX}`}>
                 <h1
-                    className={`${aboutHeroHeading.fontSize} ${aboutHeroHeading.lineHeight} ${aboutHeroHeading.fontWeight} ${aboutHeroHeading.colorTailwind} ${aboutHeroHeading.textAlign} ${aboutHeroHeading.letterSpacing}`}
+                    className={`${aboutHeroHeading.fontSize} ${aboutHeroHeading.lineHeight} ${aboutHeroHeading.fontWeight} ${aboutHeroHeading.colorTailwind} ${aboutHeroHeading.textAlign} ${aboutHeroHeading.letterSpacing} whitespace-pre-line`}
                 >
                     {aboutHeroHeading.text}
                 </h1>

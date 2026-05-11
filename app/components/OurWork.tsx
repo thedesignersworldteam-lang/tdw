@@ -7,6 +7,8 @@ import { casesData } from "@/site-data/work/cases";
 import { fontSizes } from "@/site-data/tokens";
 
 export default function OurWork() {
+  const homepageCases = casesData.filter(c => c.showOnHomepage).slice(0, 6);
+
   return (
     <section className="w-full bg-[#fdf8f2] flex flex-col items-center py-20">
       <div className="text-center max-w-4xl mb-10 px-2 mt-10">
@@ -18,24 +20,26 @@ export default function OurWork() {
         </p>
       </div>
 
-      <div className="w-[95vw] md:w-[90vw] border-[2px] border-black bg-black">
-        <div className="w-full flex flex-col md:flex-row h-[70vh] md:h-[85vh]">
-          {casesData.slice(0, 3).map((caseItem, index, array) => (
-            <WorkCard
-              key={caseItem.id}
-              caseItem={caseItem}
-              isLast={index === array.length - 1}
-            />
-          ))}
+      <div className="w-[95vw] md:w-[90vw]">
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-0">
+          {homepageCases.map((caseItem, index) => {
+            return (
+              <div 
+                key={caseItem.id} 
+                className="h-[60vh] md:h-[75vh] border-[1px] border-black overflow-hidden"
+              >
+                <WorkCard caseItem={caseItem} />
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
   );
 }
 
-function WorkCard({ caseItem, isLast }: { caseItem: typeof casesData[0]; isLast: boolean }) {
+function WorkCard({ caseItem }: { caseItem: typeof casesData[0] }) {
   const [isHovered, setIsHovered] = useState(false);
-  const borderClass = !isLast ? "border-b-[2px] md:border-b-0 md:border-r-[2px] border-black" : "";
 
   const restType = caseItem.homepageMediaRestType || "video";
   const restUrl = caseItem.homepageMediaRestUrl || (restType === "image" ? caseItem.image : caseItem.video);
@@ -46,7 +50,7 @@ function WorkCard({ caseItem, isLast }: { caseItem: typeof casesData[0]; isLast:
   return (
     <Link
       href={`/work/${caseItem.id}`}
-      className={`relative w-full h-full flex-1 group overflow-hidden bg-black ${borderClass} cursor-pointer block`}
+      className={`relative w-full h-full group overflow-hidden cursor-pointer block`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
