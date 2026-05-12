@@ -83,7 +83,7 @@ export default function ServicesHero({ data }: { data: ServiceData }) {
         {/* Pinned Title in Middle */}
         <div className="absolute inset-x-0 inset-y-0 flex items-center justify-center p-6 md:p-12 z-0 pointer-events-none">
           <motion.h1 
-            className="text-center text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-medium tracking-tight max-w-5xl leading-[1.1]"
+            className="text-center text-4xl md:text-6xl lg:text-[6rem] font-medium tracking-tight max-w-5xl leading-[1.1]"
             style={{ color: titleColor }}
           >
             {data.heroHeadline.split('\n').map((line, i) => (
@@ -160,10 +160,10 @@ export default function ServicesHero({ data }: { data: ServiceData }) {
                         transition={{ duration: 1.0, ease: "easeInOut" }}
                         className="w-full h-full p-6 md:p-8 flex flex-col relative text-white"
                       >
-                         <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold border-b-[3px] border-white/50 pb-3 mb-6 tracking-tight">
+                         <h3 className="text-2xl md:text-3xl lg:text-3xl font-medium border-b-[3px] border-white/50 pb-3 mb-6 tracking-tight">
                             {card.title}
                          </h3>
-                         <ul className="flex flex-col gap-4 text-sm md:text-base lg:text-lg font-medium w-full flex-grow">
+                         <ul className="flex flex-col gap-4 text-base md:text-lg font-medium w-full flex-grow opacity-90">
                            {card.listItems?.map((item, i) => (
                              <li key={i} className="flex items-start gap-3">
                                <span className="w-1 h-1 mt-2.5 rounded-full bg-white flex-shrink-0" />

@@ -8,7 +8,7 @@ export const heroData = {
   // ── Main Heading ──────────────────────────────────────────
   heading: {
     text: "Where Creative Meets Conversion.",
-    fontSize: "text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl",
+    fontSize: "text-4xl md:text-6xl lg:text-[6rem]",
     fontWeight: "font-medium",
     color: "text-black",
     letterSpacing: "tracking-tighter",
@@ -20,7 +20,7 @@ export const heroData = {
     text: "Because beautiful design should also deliver results. We craft brands, websites, and campaigns built to grow.",
     fontFamily: fonts.heading,
     fontSize: "text-lg sm:text-xl md:text-2xl lg:text-3xl",
-    fontWeight: "font-light",
+    fontWeight: "font-medium",
     color: "text-black",
     marginTop: "mt-8",
     letterSpacing: "tracking-tight text-balance",

@@ -74,7 +74,7 @@ export const howWeWorkHeading = {
   paddingBottom: "pb-10 md:pb-16",
 
   subtitle: "We follow a structured creative process that keeps your project on track, on budget, and on brand — from the first conversation to the final delivery.",
-  subtitleFontSize: "text-base md:text-lg lg:text-2xl text-balance",
+  subtitleFontSize: "text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium tracking-tight text-balance",
   subtitleColor: "#000000",
   subtitleColorTailwind: "text-black",
   subtitleLineHeight: "leading-relaxed",

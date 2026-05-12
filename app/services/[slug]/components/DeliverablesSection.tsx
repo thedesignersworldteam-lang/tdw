@@ -11,12 +11,12 @@ export default function DeliverablesSection({ deliverables }: { deliverables: Se
     if (!deliverables) return null;
 
     return (
-        <section className="relative w-full bg-[#fdf8f2] py-24 md:py-40">
+        <section className="relative w-full bg-[#fdf8f2] py-16 md:py-24">
             <div className="max-w-[1400px] w-full mx-auto px-6 md:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
                     
                     {/* Left Column: Sticky Headers */}
-                    <div className="lg:col-span-5 flex flex-col items-start lg:sticky lg:top-40">
+                    <div className="lg:col-span-5 flex flex-col items-start lg:sticky lg:top-24">
                         <span className="inline-block px-4 py-2 rounded-[8px] bg-[#fcdff1] text-[#171717] text-sm md:text-base font-medium mb-8">
                             {deliverables.label}
                         </span>
@@ -25,7 +25,7 @@ export default function DeliverablesSection({ deliverables }: { deliverables: Se
                             {deliverables.heading}
                         </h2>
                         
-                        <p className="text-lg md:text-[1.35rem] text-[#171717] font-medium tracking-tight">
+                        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#171717] font-medium tracking-tight text-balance">
                             {deliverables.subheading}
                         </p>
                     </div>

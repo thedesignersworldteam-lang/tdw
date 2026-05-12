@@ -23,13 +23,13 @@ export const aboutHeroParagraphs: string[] = [
 ];
 
 export const aboutHeroBodyStyles = {
-  fontSize: "text-lg md:text-xl",
-  fontWeight: "font-bold",
+  fontSize: "text-lg sm:text-xl md:text-2xl lg:text-3xl tracking-tight text-balance",
+  fontWeight: "font-medium",
   color: "#171717",
   opacity: "opacity-80",
   colorTailwind: "text-[#171717]/80",
   gap: "gap-6",
-  maxWidth: "max-w-3xl",
+  maxWidth: "max-w-5xl",
   textAlign: "text-center",
 };
 
@@ -52,7 +52,7 @@ export const aboutHeroParallax = {
 
 // ── Section Layout ────────────────────────────────────────────
 export const aboutHeroLayout = {
-  textSectionHeight: "h-[65vh]",
+  textSectionHeight: "min-h-[75vh] pt-24",
   imageWidth: "w-[90vw]",
   imageHeight: "h-[100vh]",
   imageRadius: "rounded-3xl",

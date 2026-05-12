@@ -9,7 +9,7 @@ import { fonts, fontSizes, colors } from "../tokens";
 export const workHeroHeading = {
   text:         "Our work. Your result.",
   fontFamily:   fonts.heading,
-  fontSize:     fontSizes.workTitle,   // "text-5xl sm:text-6xl md:text-[6rem] lg:text-[7.5rem] xl:text-[8rem]"
+  fontSize:     "text-4xl md:text-6xl lg:text-[6rem]",
   fontWeight:   "font-medium",
   letterSpacing:"tracking-tight",
   lineHeight:   "leading-[1.05]",

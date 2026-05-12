@@ -73,14 +73,14 @@ export const clientTypeCardStyles = {
   textColor: "text-white",
 
   title: {
-    fontSize: "text-3xl md:text-4xl",
-    fontWeight: "font-semibold",
+    fontSize: "text-2xl md:text-3xl lg:text-3xl",
+    fontWeight: "font-medium tracking-tight",
     lineHeight: "leading-tight",
     marginBottom: "mb-4",
   },
   desc: {
-    fontSize: "text-base md:text-lg",
-    fontWeight: "font-light",
+    fontSize: "text-base md:text-lg lg:text-xl",
+    fontWeight: "font-medium",
     lineHeight: "leading-snug",
     opacity: "opacity-90",
   },

@@ -127,7 +127,7 @@ export const whyBrandsHeading = {
   titleMarginBottom: "mb-8",
 
   subtitle: "We combine creative precision with commercial thinking — so your brand doesn't just look good, it works hard.",
-  subtitleFontSize: "text-base md:text-xl lg:text-2xl text-balance",
+  subtitleFontSize: "text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium tracking-tight text-balance",
   subtitleColor: "#1f2937",
   subtitleColorTailwind: "text-gray-800",
   subtitleLineHeight: "leading-relaxed",
@@ -149,11 +149,11 @@ export const whyBrandsCardStyles = {
     valueFontSize: fontSizes.statNumber,      // "text-6xl"
     valueFontWeight: "font-medium",
     valueTracking: "tracking-tighter",
-    labelFontSize: "text-2xl",
+    labelFontSize: "text-2xl md:text-3xl lg:text-3xl",
     labelFontWeight: "font-medium",
     labelMarginBottom: "mb-3",
-    subLabelFontSize: fontSizes.label,           // "text-sm"
-    subLabelOpacity: "opacity-80",
+    subLabelFontSize: "text-base md:text-lg",
+    subLabelOpacity: "opacity-90 font-medium",
     textColor: "text-white",
     dividerColor: "bg-white/30",
     padding: "p-8",

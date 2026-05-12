@@ -55,7 +55,7 @@ export const colors = {
 // and registered in app/globals.css using `@theme inline`.
 export const fonts = {
   heading: "var(--font-bricolage)" as string,  // Bricolage Grotesque — all h1–h6
-  body:    "var(--font-inter)"  as string,  // Inter — body, subtitles, labels
+  body:    "var(--font-bricolage)"  as string,  // Inter — body, subtitles, labels
 } as const;
 
 // ── Responsive Font Sizes ─────────────────────────────────────
@@ -94,15 +94,15 @@ export const fontSizes = {
   /** Step / process title — "Triangle", "Discovery" */
   stepTitle:   "text-5xl md:text-6xl lg:text-7xl",
   /** Standard card heading */
-  cardTitle:   "text-[22px] md:text-[26px] lg:text-[30px]",
+  cardTitle:   "text-2xl md:text-3xl lg:text-3xl font-medium tracking-tight",
 
   // ─ Taglines & subtitles ────────────────────────────────────
   /** Short bold tagline: "Less Noise, More Impact" */
   tagline:     "text-2xl md:text-5xl",
   /** Hero sub-headline under pageTitle */
-  subtitle:    "text-lg sm:text-xl md:text-2xl lg:text-3xl",
+  subtitle:    "text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium tracking-tight text-balance",
   /** Section description paragraph under a heading */
-  description: "text-lg md:text-2xl",
+  description: "text-lg md:text-2xl font-medium",
 
   // ─ Body text ───────────────────────────────────────────────
   /** Extra-large body: long pull-quote paragraphs */

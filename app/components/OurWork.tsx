@@ -74,9 +74,9 @@ function WorkCard({ caseItem }: { caseItem: typeof casesData[0] }) {
       <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end bg-gradient-to-t from-black/60 via-black/20 to-transparent">
         <div className="transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500 flex flex-col">
           <div className={`${fontSizes.label} text-white/80 font-medium mb-1 tracking-widest`}>{caseItem.serial}</div>
-          <h3 className="text-white text-3xl md:text-4xl font-normal tracking-tight uppercase">{caseItem.homepageTitle || caseItem.title}</h3>
+          <h3 className="text-white text-2xl md:text-3xl lg:text-3xl font-medium tracking-tight uppercase">{caseItem.homepageTitle || caseItem.title}</h3>
           {(caseItem.homepageDescription || caseItem.description) && (
-            <p className="text-white/80 mt-2 text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 leading-relaxed max-w-[90%]">
+            <p className="text-white/80 mt-2 text-base md:text-lg font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 leading-relaxed max-w-[90%]">
               {caseItem.homepageDescription || caseItem.description}
             </p>
           )}
